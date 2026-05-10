@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 #define BYTES_PER_LINE 16
 
 void print_hex_dump(FILE *file) {
@@ -16,7 +17,19 @@ void print_hex_dump(FILE *file) {
       printf("%02x ", buffer[i]);
     }
 
-    printf("\n");
+    // start ascii col
+    printf("|");
+
+    // print ascii chars
+    for (size_t i = 0; i < bytes_read; i++) {
+      if (isprint(buffer[i])) {
+        printf("%c", buffer[i]);
+      } else {
+        printf(".");
+      }
+    }
+
+    printf("|\n");
 
     // move offset forward by bytes read
     offset += bytes_read;
