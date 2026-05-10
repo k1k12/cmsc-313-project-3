@@ -44,5 +44,8 @@ For example, the `-O3` assembly includes:
 
 This shows the compiler is aligning the code differently to help it run more efficiently.
 
+## Conclusion
 
+All three optimisation levels produce the same output. The main difference is how the compiler translates the C code into assembly.
 
+For this program, optimisation probably does not make a large runtime difference because most of the work is file reading and formatted printing, rather than heavy computation.
