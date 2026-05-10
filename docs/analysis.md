@@ -18,7 +18,7 @@ I checked my programs hexdump against the Linux command:
 hexdump -Cv data/binary.out
 ```
 
-The bytes and ASCII output matched and I saved the output from the Linux hexdump in `outputs/hexdump_program.txt` and the Linux command output in `outputs/hexdump_linux.txt`..
+The bytes and ASCII output matched and I saved the output from the Linux hexdump in `outputs/hexdump_program.txt` and the Linux command output in `outputs/hexdump_linux.txt`.
 
 ## Optimisation Differences
 
@@ -34,7 +34,7 @@ Looking at the code the `-O0` assembly is the easiest to follow because it stays
 
 The `-O1` assembly applyies some optimisation. It uses registers more actively and changes the structure of the code compared with `-O0`. This makes the assembly less of a direct copy of the C source code, but a little bit more efficient.
 
-The `-O3` assembly is the longest (237 lines) even though it is the most effecient. The compiler rearranged instructions and restructure loops to improve performance.
+The `-O3` assembly is the longest (237 lines) even though it is the most effecient. The compiler rearranged instructions and loops to improve performance.
 
 For example, the `-O3` assembly includes:
 
