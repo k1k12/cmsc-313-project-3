@@ -6,7 +6,7 @@ int main(int argc, char *argv[]) {
   // make sure file runs with one file as arg
   if (argc != 2) {
     fprintf(stderr, "Usage: %s <binary file>\n", argv[0]);
-    return 1'
+    return 1;
   }
 
   // open file in rb
