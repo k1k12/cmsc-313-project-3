@@ -28,14 +28,14 @@ The assembly files were generated using -S with `-O0`, `-O1`, and `-O3`.
 | Optimization Level | Assembly Lines |
 |---|---:|
 | `-O0` | 200 |
-| `-O1` | 207 |
-| `-O3` | 237 |
+| `-O1` | 193 |
+| `-O3` | 214 |
 
 Looking at the code for the `-O0` assembly, it is the easiest to follow because it remains closest line by line to the original C code. The loops and variables are easier to match back to the source program. This makes using `-O0` useful for if I wanted to debug or understand the assembly without access to the source code.
 
 The `-O1` assembly applies some optimization. It uses registers more actively (for example `%rbx` and `%rbp`) and changes the structure of the code compared with `-O0`. This makes the assembly less of a direct copy of the C source code, but more efficient.
 
-The `-O3` assembly is the longest (237 lines) even though it is the most optimized. The compiler rearranged instructions and loops to improve performance.
+The `-O3` assembly is the longest (214 lines) even though it is the most optimized. The compiler rearranged instructions and loops to improve performance.
 
 For example, the `-O3` assembly includes:
 
