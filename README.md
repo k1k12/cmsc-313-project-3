@@ -8,9 +8,8 @@ The prpject also includes the compiled program with optimisation levels -O0, -O1
 ## Project Structure
 
 ```text
-.
-├── README.md
-├── asm/
+
+├──── asm/
 │   ├── hexdump_O0.s
 │   ├── hexdump_O1.s
 │   └── hexdump_O3.s
@@ -23,10 +22,14 @@ The prpject also includes the compiled program with optimisation levels -O0, -O1
 ├── outputs/
 │   ├── hexdump_linux.txt
 │   └── hexdump_program.txt
-└── src/
-    └── hexdump.c
+├─── src/
+│    └── hexdump.c
+└──── README.md
+```
 
 ## Build Program
+
+To build the program, run:
 
 ```bash
 gcc -Wall -Wextra -std=c11 src/hexdump.c -o build/hexdump
@@ -34,14 +37,17 @@ gcc -Wall -Wextra -std=c11 src/hexdump.c -o build/hexdump
 
 ## Build Assembly
 
+To build the assembly files, run:
+
 ```bash
-mkdir -p asm
 gcc -Wall -O0 -S src/hexdump.c -o asm/hexdump_O0.s
 gcc -Wall -O1 -S src/hexdump.c -o asm/hexdump_O1.s
 gcc -Wall -O3 -S src/hexdump.c -o asm/hexdump_O3.s
 ```
 
 ## Run
+
+To start the program, run:
 
 ```bash
 ./build/hexdump data/binary.out
