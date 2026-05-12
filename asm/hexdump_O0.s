@@ -11,7 +11,7 @@
 	.globl	print_hex_dump
 	.type	print_hex_dump, @function
 print_hex_dump:
-.LFB0:
+.LFB6:
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -113,7 +113,7 @@ print_hex_dump:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE0:
+.LFE6:
 	.size	print_hex_dump, .-print_hex_dump
 	.section	.rodata
 .LC3:
@@ -126,7 +126,7 @@ print_hex_dump:
 	.globl	main
 	.type	main, @function
 main:
-.LFB1:
+.LFB7:
 	.cfi_startproc
 	endbr64
 	pushq	%rbp
@@ -178,7 +178,7 @@ main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE1:
+.LFE7:
 	.size	main, .-main
 	.ident	"GCC: (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
 	.section	.note.GNU-stack,"",@progbits

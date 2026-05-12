@@ -29,7 +29,7 @@ The prpject also includes the compiled program with optimisation levels -O0, -O1
 
 ## Build Program
 
-To build the program, run:
+To build the program, run from project root:
 
 ```bash
 gcc -Wall src/hexdump.c -o build/hexdump
@@ -37,7 +37,7 @@ gcc -Wall src/hexdump.c -o build/hexdump
 
 ## Build Assembly
 
-To build the assembly files, run:
+To build the assembly files, run from project root:
 
 ```bash
 gcc -Wall -O0 -S src/hexdump.c -o asm/hexdump_O0.s
@@ -47,7 +47,7 @@ gcc -Wall -O3 -S src/hexdump.c -o asm/hexdump_O3.s
 
 ## Run
 
-To start the program, run:
+To start the program, run from project root:
 
 ```bash
 ./build/hexdump data/binary.out
