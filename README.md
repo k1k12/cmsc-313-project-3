@@ -32,7 +32,7 @@ The prpject also includes the compiled program with optimisation levels -O0, -O1
 To build the program, run:
 
 ```bash
-gcc -Wall -Wextra -std=c11 src/hexdump.c -o build/hexdump
+gcc -Wall src/hexdump.c -o build/hexdump
 ```
 
 ## Build Assembly
