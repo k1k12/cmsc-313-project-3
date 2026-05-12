@@ -18,7 +18,7 @@ The prpject also includes the compiled program with optimisation levels -O0, -O1
 ├── data/
 │   └── binary.out
 ├── docs/
-│   └── analysis.md
+│   └── analysis.md #contains assembly analysis file
 ├── outputs/
 │   ├── hexdump_linux.txt
 │   └── hexdump_program.txt
